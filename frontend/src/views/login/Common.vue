@@ -49,7 +49,6 @@ export default {
     height: 100vh;
     overflow: auto;
     background: rgb(234, 234, 234) url(../../../static/img/house.jpg) no-repeat center ;
-    background-size: contain;
     .content {
       padding: 32px 0;
       flex: 1;
