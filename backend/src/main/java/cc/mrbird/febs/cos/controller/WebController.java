@@ -410,7 +410,7 @@ public class WebController {
      */
     @GetMapping("/selUserCartByGoodsId")
     public R selUserCartByGoodsId(@RequestParam(value = "userId") Integer userId, @RequestParam(value = "commodityId") Integer commodityId) {
-        return R.ok(orderInfoService.count(Wrappers.<OrderInfo>lambdaQuery().eq(OrderInfo::getUserId, userId).eq(OrderInfo::getCommodityId, commodityId).eq(OrderInfo::getOrderStatus, 1)));
+        return R.ok(orderInfoService.count(Wrappers.<OrderInfo>lambdaQuery().eq(OrderInfo::getUserId, userId).eq(OrderInfo::getCommodityId, commodityId).eq(OrderInfo::getOrderStatus, 0)));
     }
 
     /**

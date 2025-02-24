@@ -20,12 +20,6 @@
             <text class='text-grey'>我的订单</text>
         </navigator>
     </view>
-    <!-- <view class="cu-item arrow">
-        <navigator class='content' open-type="navigate" hover-class='none' url="/pages/vipcard/index/index">
-            <text class='icon-vipcard text-green'></text>
-            <text class='text-grey'>会员卡</text>
-        </navigator>
-    </view> -->
     <view class="cu-item arrow">
         <navigator class='content' open-type="navigate" hover-class='none' url="/pages/coupon/index/index">
             <text class='icon-ticket text-red'></text>
@@ -38,10 +32,4 @@
             <text class='text-grey'>地址管理</text>
         </navigator>
     </view>
-    <!-- <view class="cu-item arrow" wx:if="{{userInfo.type == 2}}">
-        <navigator class='content' open-type="navigate" hover-class='none' url="/pages/user/goods/index">
-            <text class='icon-vipcard text-green'></text>
-            <text class='text-grey'>我的商品</text>
-        </navigator>
-    </view> -->
 </view>
