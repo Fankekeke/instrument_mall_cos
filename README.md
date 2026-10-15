@@ -1,17 +1,17 @@
-### 基于SpringBoot + Vue的乐器商城平台.
+![](https://img.shields.io/badge/License-MIT-blue.svg)
 
-乐器电商平台、在线乐器商城、乐器销售小程序
+![](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
 
-#### 商铺管理员功能模块介绍：
-###### 商铺信息：维护乐器店铺名称、简介、营业状态等基本信息。我的商品：管理本店上架的乐器及配件，支持编辑与上下架。商铺订单：处理用户下单、发货、退换货等订单全流程操作。订单评价：查看顾客对乐器音质、服务等的评分与留言反馈。消息回复：及时响应用户关于商品、物流或售后的咨询消息。商铺审核：提交资质材料，配合平台完成入驻或年审流程。用户沟通：与买家在线交流，解答乐器型号、试音等问题。
+![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-#### 系统管理员功能模块介绍：
-###### 收货地址管理：监管用户配送地址，确保乐器安全准确送达。商铺审核管理：审核乐器商家资质，保障平台专业性与合规性。公告信息：发布促销活动、新品到货或系统维护等重要通知。商品管理：审核并管理全平台乐器商品信息与展示合规性。用户评价：监控和处理用户对商品、商铺的评论内容。消息管理：统一管理平台内各类通知、私信与客服消息。订单管理：跟踪所有交易订单状态，协调异常或纠纷处理。贴子管理：审核社区论坛发帖，维护音乐交流环境健康有序。商铺管理：维护所有乐器商铺资料，支持推荐、冻结等操作。用户管理：管理用户账号安全，处理违规行为或封禁操作。商品类型：配置乐器分类，如钢琴、吉他、小提琴、打击乐等。
+# 基于 SpringBoot + Vue 的乐器商城平台 (Musical Instrument Marketplace Platform)
 
-#### 用户功能模块介绍：
-###### 商铺详情：浏览乐器店铺信息、主营品牌、评分及联系方式。查看公告：阅读平台或商家发布的优惠、演出活动等通知。搜索商品：按品牌、类型或价格快速查找所需乐器或配件。系统论坛：参与乐器选购、练习技巧、演出经验等话题讨论。发帖回复：在社区中分享心得或回复他人音乐相关帖子。用户订单：查看乐器购买记录、物流进度及售后服务状态。加入购物车：将心仪乐器暂存购物车，便于比价与结算。收货地址管理：添加或管理多个收货地址，适配不同配送需求。订单评价：对已购乐器进行音色、做工、服务等维度评价。联系客服：通过在线方式咨询产品参数、调音或保修问题。
+乐器垂直电商 · 多商铺入驻 · 社区论坛 · 订单评价 · 消息沟通
+
+本项目是一套面向乐器行业的多商铺电商平台，采用前后端分离架构，覆盖系统管理员、商铺管理员与普通用户三类角色。系统围绕"乐器商品展示、多商铺入驻审核、购物车与订单管理、用户评价、系统论坛交流、消息沟通"等核心业务设计，支持用户浏览乐器商品、加入购物车下单，商铺管理员管理自有商品与订单，系统管理员统筹平台运营与商铺审核，同时集成社区论坛功能促进乐器爱好者交流，适用于乐器垂直电商、多商户乐器商城、音乐器材交易平台等场景。
 
 #### 安装环境
+️**注意**：请确保您的开发环境已安装以下依赖。
 
 JAVA 环境 
 
@@ -19,34 +19,146 @@ Node.js环境 [https://nodejs.org/en/] 选择14.17
 
 Yarn 打开cmd， 输入npm install -g yarn !!!必须安装完毕nodejs
 
-Mysql 数据库 [https://blog.csdn.net/qq_40303031/article/details/88935262] 一定要把账户和密码记住
+Mysql 数据库 一定要把账户和密码记住
 
 redis
 
-Idea 编译器 [https://blog.csdn.net/weixin_44505194/article/details/104452880]
+Idea 编译器
 
-WebStorm OR VScode 编译器 [https://www.jianshu.com/p/d63b5bae9dff]
+WebStorm OR VScode 编译器
 
 #### 采用技术及功能
 
 后端：SpringBoot、MybatisPlus、MySQL、Redis、
 前端：Vue、Apex、Antd、Axios
-报表：Spread.js
 
-平台前端：vue(框架) + vuex(全局缓存) + rue-router(路由) + axios(请求插件) + apex(图表)  + antd-ui(ui组件)
+平台前端：vue(框架) + vuex(全局缓存) + rue-router(路由) + axios(请求插件) + apex(图表)  + antd-ui(ui组件) + 百度地图 API
 
 平台后台：springboot(框架) + redis(缓存中间件) + shiro(权限中间件) + mybatisplus(orm) + restful风格接口 + mysql(数据库)
 
 开发环境：windows10 or windows7 ， vscode or webstorm ， idea + lambok
 
-#### 商铺管理员
-商铺信息、我的商品、商铺订单、订单评价、消息回复、商铺审核、用户沟通
+---
 
-#### 系统管理员
-收货地址管理、商铺审核管理、公告信息、商品管理、用户评价、消息管理、订单管理、贴子管理、商铺管理、用户管理、商品类型
+## 核心特性
 
-#### 用户
-商铺详情、查看公告、搜索商品、系统论坛、发帖回复、用户订单、加入购物车、收货地址管理、订单评价、联系客服
+- **多商铺入驻体系**：支持多个乐器商铺入驻平台，商铺管理员独立管理自有商品、订单与用户沟通，系统管理员统一审核商铺资质与运营状态。
+- **乐器商品管理**：按商品类型（吉他、钢琴、提琴、管乐、民乐、打击乐等）分类展示，支持商品详情、规格、库存、价格管理与搜索筛选。
+- **完整购物流程**：用户可搜索商品、查看详情、加入购物车、选择收货地址下单，支持订单状态跟踪与订单评价。
+- **商铺订单管理**：商铺管理员查看本商铺订单趋势统计、处理商铺订单、回复用户评价，实现订单全流程管控。
+- **系统论坛社区**：内置乐器爱好者交流论坛，用户可发帖分享演奏心得、乐器保养知识、选购建议，支持回帖互动。
+- **消息沟通机制**：用户与商铺管理员可在线沟通咨询商品问题，系统管理员统一管理系统消息与公告通知。
+- **用户评价体系**：用户可对已购商品进行评分与文字评价，商铺管理员可查看并回复评价，形成口碑沉淀。
+- **商铺审核管理**：系统管理员对新入驻商铺进行资质审核，审核通过后商铺方可上架商品与接单。
+- **公告信息发布**：系统管理员发布平台公告、促销活动与维护通知，用户可查看最新公告信息。
+- **收货地址管理**：用户可维护多个收货地址，下单时快速选择，提升购物体验。
+---
+
+## 适用场景
+
+- 多商铺乐器商城
+- 音乐器材在线销售平台
+- 乐器爱好者社区电商
+- 琴行线上商城
+- 二手乐器交易平台
+- 音乐培训机构配套商城
+- 乐器品牌官方商城
+---
+
+## 功能模块概览
+
+### 系统管理员端
+
+系统管理员端负责平台整体运营、商铺审核、商品监管与数据统计：
+
+**平台运营管理**
+
+- **商铺管理**：查看平台所有商铺列表，管理商铺基本信息、运营状态与联系方式。
+- **商铺审核管理**：审核新入驻商铺的资质材料，批准或驳回入驻申请，确保商铺质量。
+- **商品管理**：查看平台所有商品，对违规商品进行下架处理，监管商品质量。
+- **商品类型**：管理乐器商品分类体系，如吉他、钢琴、提琴、管乐、民乐、打击乐、配件等，支持多级分类配置。
+
+**订单与评价管理**
+
+- **订单管理**：查看平台所有订单，监控订单状态与交易数据，处理异常订单。
+- **平台商铺订单统计**：统计各商铺订单量、销售额、订单趋势等核心指标，辅助运营决策。
+- **用户评价**：查看用户对商品与商铺的评价，处理违规评价与投诉。
+
+**用户与内容管理**
+
+- **用户管理**：查看注册用户列表，管理用户账号状态与权限设置。
+- **收货地址管理**：查看与管理用户收货地址数据。
+- **贴子管理**：管理论坛帖子，审核违规内容，维护社区秩序。
+- **消息管理**：统一处理系统消息、用户与商铺之间的沟通消息。
+- **公告信息**：发布平台公告、促销活动与维护通知，支持富文本编辑与定时发布。
+
+### 商铺管理员端
+
+商铺管理员端面向入驻商铺的运营人员，负责本商铺的商品、订单与用户服务：
+
+**商铺与商品管理**
+
+- **商铺信息**：维护商铺名称、Logo、简介、联系方式与公告信息。
+- **我的商品**：管理本商铺上架的乐器商品，包括新增、编辑、上下架、库存与价格调整。
+
+**订单与评价管理**
+
+- **商铺订单**：查看本商铺订单列表，处理发货、退款等订单操作。
+- **订单趋势统计**：查看本商铺订单量、销售额的日/周/月趋势图表，分析经营数据。
+- **订单评价**：查看用户对本商铺商品的评价，进行回复与维护口碑。
+
+**用户沟通**
+
+- **消息回复**：回复用户关于商品的咨询与留言，提供售前售后服务。
+- **用户沟通**：与用户进行在线沟通，解答乐器选购、使用与保养等问题。
+
+### 用户端
+
+用户端面向乐器爱好者与消费者，提供商品浏览、购物下单、论坛交流等功能：
+
+**商品浏览与购物**
+
+- **搜索商品**：按关键词、商品类型、价格区间等条件搜索乐器商品。
+- **商铺详情**：查看商铺基本信息、在售商品与用户评价，了解商铺信誉。
+- **加入购物车**：将心仪商品加入购物车，支持数量调整与批量结算。
+- **收货地址管理**：维护个人收货地址，支持新增、编辑、删除与设置默认地址。
+
+**订单与评价**
+
+- **用户订单**：查看个人订单列表，跟踪订单状态（待支付、待发货、已发货、已完成），支持取消订单与申请退款。
+- **订单评价**：对已完成的订单商品进行评分与文字评价，分享购物体验。
+
+**社区与消息**
+
+- **系统论坛**：浏览乐器爱好者发布的帖子，包括演奏心得、乐器保养、选购建议等内容。
+- **发帖回复**：在论坛发布帖子分享经验，或回复他人帖子参与讨论互动。
+- **查看公告**：查看平台发布的最新公告与活动信息。
+- **联系客服**：联系商铺管理员或平台客服，咨询商品问题与售后服务。
+
+---
+
+## 项目结构
+
+```text
+pharmacy-dispensing-system/
+├── backend/            # 后端 API 服务
+│   ├── src/
+│   │   ├── controllers/  # 控制器
+│   │   ├── models/       # 数据模型
+│   │   ├── routes/       # 路由
+│   │   └── services/     # 业务逻辑
+│   └── package.json
+├── frontend/           # 前端 Web 应用
+│   ├── src/
+│   │   ├── views/      # 页面视图
+│   │   ├── components/ # 公共组件
+│   │   └── store/      # 状态管理
+│   └── package.json
+├── docs/               # 项目文档与 API 接口说明
+├── LICENSE
+└── README.md
+```
+---
 
 
 #### 前台启动方式
@@ -56,36 +168,32 @@ WebStorm OR VScode 编译器 [https://www.jianshu.com/p/d63b5bae9dff]
 #### 默认后台账户密码
 [管理员]
 admin
-1234qwer
-
-[商家]
-test1
-1234qwer
+123456
 
 [用户]
-小程序登录
+fank
+123456
 
 #### 项目截图
+|  |  |
+|---------------------|---------------------|
+| ![](./assets/image%20(1).png) | ![](./assets/image%20(2).png) |
+| ![](./assets/image%20(3).png) | ![](./assets/image%20(4).png) |
+| ![](./assets/image%20(5).png) | ![](./assets/image%20(6).png) |
+| ![](./assets/image%20(7).png) | ![](./assets/image%20(8).png) |
+| ![](./assets/image%20(9).png) | ![](./assets/image%20(10).png) |
+| ![](./assets/image%20(11).png) | ![](./assets/image%20(12).png) |
+| ![](./assets/image%20(13).png) | ![](./assets/image%20(14).png) |
+| ![](./assets/image%20(15).png) | ![](./assets/image%20(16).png) |
+| ![](./assets/image%20(17).png) | ![](./assets/image%20(18).png) |
 
 |  |  |
 |---------------------|---------------------|
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891123089.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891004053.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891113884.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891288751.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891106975.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891282256.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891094328.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891275464.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891083152.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891264599.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891075366.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891167999.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891066848.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891160759.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891058919.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891152287.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891047352.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891144534.png) |
-
-|  |  |
-|---------------------|---------------------|
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891325648.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891378791.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891427571.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891371658.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891419610.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891354296.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891397855.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891347126.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891387090.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1737891339805.png) |
+| ![](./assets/image%20(1).jpg) | ![](./assets/image%20(2).jpg) |
+| ![](./assets/image%20(3).jpg) | ![](./assets/image%20(4).jpg) |
+| ![](./assets/image%20(5).jpg) | ![](./assets/image%20(6).jpg) |
+| ![](./assets/image%20(7).jpg) | ![](./assets/image%20(8).jpg) |
+| ![](./assets/image%20(9).jpg) | ![](./assets/image%20(10).jpg) |
 
 #### 演示视频
 
@@ -103,9 +211,10 @@ WeChat: `Storm_Berserker`
 
 > 项目部署调试不好包退！功能逻辑没讲明白包退！
 
-![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/work/936e9baf53eb9a217af4f89c616dc19.png)
+<div align=center><img align="center" src="./assets/product_word.png" alt="fankekeke" /></div>
 
 #### 其它资源
+[2026年-答辩顺利通过-客户评价🀄](https://berserker287.github.io/2026/06/29/2026%E5%B9%B4%E7%AD%94%E8%BE%A9%E9%A1%BA%E5%88%A9%E9%80%9A%E8%BF%87/)
 
 [2025年-答辩顺利通过-客户评价🍜](https://berserker287.github.io/2025/06/18/2025%E5%B9%B4%E7%AD%94%E8%BE%A9%E9%A1%BA%E5%88%A9%E9%80%9A%E8%BF%87/)
 
@@ -129,4 +238,8 @@ WeChat: `Storm_Berserker`
 
 More info: [悲伤的橘子树](https://berserker287.github.io/)
 
-<p><img align="center" src="https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/%E5%90%88%E4%BD%9C%E7%89%A9%E6%96%99%E6%A0%B7%E5%BC%8F%20(3).png" alt="fankekeke" /></p>
+<div align="center"><img align="center" src="./assets/chat_qr_code.png" alt="fankekeke" width=250 /></div>
+
+<p><img align="center" src="./assets/wechat_group.png" alt="fankekeke" /></p>
+
+**感谢查看**
